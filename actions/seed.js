@@ -3,8 +3,12 @@
 import { db } from "@/lib/prisma";
 import { subDays } from "date-fns";
 
-const ACCOUNT_ID = "account-id";
-const USER_ID = "user-id";
+const user = await db.user.findFirst();
+const account = await db.account.findFirst({ where: { userId: user.id } });
+
+const USER_ID = user.id;
+const ACCOUNT_ID = account.id;
+
 
 // Categories with their typical amount ranges
 const CATEGORIES = {
