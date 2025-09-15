@@ -29,7 +29,7 @@ WorthyWallet is a full-stack personal budget tracker that helps users manage the
 
 ## ⚙️ Installation & Setup  
 
-### 1️⃣ Clone the repository  
+1️⃣ Clone the repository  
 ```bash
 git clone https://github.com/your-username/worthywallet.git
 cd worthywallet
