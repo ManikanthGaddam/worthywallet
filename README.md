@@ -27,33 +27,41 @@ WorthyWallet is a full-stack personal budget tracker that helps users manage the
 
 
 
+## ⚙️ Installation & Setup  
 
-
-## Getting Started
-
-First, run the development server:
-
+### 1️⃣ Clone the repository  
 ```bash
+git clone https://github.com/your-username/worthywallet.git
+cd worthywallet
+
+
+2️⃣ Install dependencies
+npm install
+# or
+yarn install
+
+
+3️⃣ Setup environment variables
+
+Copy the example environment file and fill in your own keys:
+
+cp .env.example .env
+
+4️⃣ Setup the database
+
+Run Prisma migrations to sync your database schema:
+
+npx prisma migrate dev
+
+5️⃣ Run the development server
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000
+ in your browser 🚀
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
